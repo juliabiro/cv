@@ -133,12 +133,12 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+%  \par\vspace{\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  \par\vspace{.5\parskip}
 }
 
 \renewcommand{\subsection}[1]{
@@ -168,9 +168,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
+    #4\vspace{2}%
   }\\}
-
 
 %%%%%%%%%%%%%%
 % Side block %
