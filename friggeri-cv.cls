@@ -135,8 +135,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \newcounter{colorCounter2}
-\def\@wideentrycolor#1#2#3{%
-  {%
+\def\@wideentrycolor{%
     \color{%
       \ifcase\value{colorCounter2}%
         red\or%
@@ -150,7 +149,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf
         magenta\or
         lime\else%
         headercolor\fi%
-    } #1#2#3%
   }%
   \stepcounter{colorCounter2}%
 }
