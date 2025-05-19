@@ -69,7 +69,6 @@ BoldItalicFont=texgyreheros-bolditalic.otf]
 {texgyreheros-regular.otf}
 \newfontfamily\thinfont[]{Lato-Light.ttf}
 \newfontfamily\headingfont[]{texgyreheros-bold.otf}
-
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont
 [Mapping=tex-text, Color=textcolor,
@@ -163,7 +162,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}%
+  %\par\vspace{.5\parskip}%
   {%
   \large\headingfont\color{headercolor} #1%
   }
@@ -205,7 +204,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \textbf{\@wideentrycolor #2}%
     \hfill%
     {\normalsize #3}\\%
-    #4\vspace{2pt}%
+    #4\vspace{8pt}%
   }\\}
 
 %%%%%%%%%%%%%%
