@@ -121,11 +121,13 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
         red\or%
         orange\or%
+        yellow\or%
         green\or%
-        purple\else%
+        blue\or%
+        purple\or%
+        violet\else%
         headercolor\fi%
     } #1#2#3%
   }%

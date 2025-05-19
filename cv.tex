@@ -3,46 +3,42 @@
 
 \begin{document}
 \header{júlia}{biró}
-       {infrastructure \& tooling engineer}
+       {infrastructure \& reliability engineer}
 
 
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{about}
-    Villányi út 55-65
-    1118 Budapest
-    Hungary
+  Berlin
+  Germany
     ~
     \href{mailto:julia.biro@gmail.comt}{julia.biro@gmail.com}
-    \href{tel:+36308630138}{tel:+36308630138}
+    \href{tel:+4917656905914}{tel:+4917656905914}
     \href{http://facebook.com/julia.biro1}{fb://julia.biro1}
     \href{www.linkedin.com/in/julia-biro}{ln://julia-biro}
     \href{https://github.com/juliabiro}{gh://juliabiro}
   \section{languages}
-    fluent english
-    native hungarian
+    fluent English
+    native Hungarian
+    B1 German
   \section{code}
-  Python
-  bash script
-  ruby
+  go python
+  javascript bash
   \section{dev}
-  Git, CI/CD, Makefile, gradle, package management
+  Terraform, Kubernetes, AWS, Fastly VCL, everything configuration
   \section{teaching}
   \includegraphics[width=60pt]{railsgirls-sq}
   \includegraphics[width=80pt]{dglogo}
   \includegraphics[width=80pt]{skool_Logo}
-  \includegraphics[width=80pt]{METU}
 \end{aside}
 
 \section{interests}
-scalable HA infrastructure, DevOps, microservices, CI/CD, IaC, secret management \break
-programming for beginners, women in technology
-
+Reliability, scalability, security, monitoring, incident management
 \section{education}
 \begin{entrylist}
   \entry
     {2007 – 2013}
-    {BSc degree in IT Engineering/CS} 
+    {BSc degree in IT Engineering/CS}
     {specialization in software development}
     {Budapest University of Technology and Economics}
   \entry
@@ -51,34 +47,57 @@ programming for beginners, women in technology
     {specialization in operation theory}
     {Eötvös Loránd University of Sciences}
 \end{entrylist}
-
+\break
 \section{experience}
 \begin{entrylist}
-  \entry{2014 – }{Prezi} {infrastructure team}{infrastructure and tooling engineer}
+  \entry{2017-2025}{Contentful} {reliability team}{senior reliability engineer}
+  \entry{2014 – 2017}{Prezi} {infrastructure team}{infrastructure and tooling engineer}
   \entry{2011 –	2014}{Ericsson Hungary} {edge router software testing}{software developer}
   \entry{2008 – 2011}{MTA SZTAKI} {Data-mining and Web search team}{software developer}
 \end{entrylist}
 
 \section{skills}
 \begin{entrylist}
-  \entry{}{Infrastructure management}{}{unix, AWS, Terraform, Docker, nginx, VPN}
-  \entry{}{DevOps}{}{Jenkins, Pipeline,
-    Prometheus, Graphite, Scribe, ELK stack, Artifactory}
-  \entry{}{Microservices}{}{ElasticBeanstalk, Chef, HTTP(s) networking, authentication}
-  \entry{}{Programming}{}{Experience: C++, Java, Javascript; Have seen: Ada,
-    Erlang, Prolog}
+  \entry{}{Infrastructure management}{}{AWS, Fastly, Kubernetes, Terraform}
+  \entry{}{Monitoring}{}{Prometheus, Grafana, Splunk, OpenTelemetry}
+  \entry{}{Reliability}{}{Networking, procedures}
+  \entry{}{Caching}{}{Fastly, Varnish, Akamai, CloudFront}
   \end{entrylist}
-
-\section{projects}
+\section{scope}
 \begin{entrylist}
-  \entry{}{new CI system}{prezi}{from research through implementation to full company rollout}
-  \entry{}{2FA}{prezi}{designing a 2FA solution with no clientside change}
-  \entry{}{In-service OS upgrade}{prezi}{on a live server cluster without outage}
-  \entry{}{Secret management rollout}{prezi}{using AWS IAM and KMS on a pool of several hundred servers}
-  \entry{}{IPC-based test tool}{ericsson}{for edge-router os, development and maintenance}
-  \entry{}{Various programming tasks}{sztaki}{recommending pipeline,algorithms, Java GUI}
+  \entry{}{team}{}{project lead, implementation}
+  \entry{}{group}{}{collaboration on initiatives, establishing processes}
+  \entry{}{across group limits}{}{consulting on implementation}
+  \entry{}{all engineering}{}{establishing processes}
+  \entry{}{across department limits}{}{knowledge sharing, internal enablement}
 \end{entrylist}
-
-  \section{hobbies}
-  European cinema; new wave coffee, craft beer/home brewing; music and reading
+\section{hobbies}
+  European cinema; museums; reading quality journalism
+\newpage
+\section{projects}
+\subsection{driver}
+\begin{entrylist}
+  \entry{}{Migrations}{}{I assisted in the execution and planning of several migrations projects, with regards to service availability, data integrity, cache behavior etc. Examples are spread out around: I’ve seen/done/planned migrations between secret storage solutions, monitoring and alerting providers, application platforms, cache invalidation strategies, async message bus providers, WAF providers, edge cache providers. Even the move of a small stateless service between clouds.}
+  \entry{}{Monitoring}{}{Maintainer and later driver of monitoring. Did everything from editing Grafana dashboards to mapping out the current state and defining a future strategy for monitoring and observability. Multiple rounds of moving/restructuring pipelines for alerting.}
+  \entry{}{Reliability}{}{Contributed to implementing multi-region service of stateful API. Advising on migration plans for an async communication flow between two message bus systems. Defining and initiating process for managing reliability-related risks from a business perspective. Reliability/scalability evaluation before events where changing or more critical traffic is expected. Multiple projects for reducing blast radiuses by routing and sectioning traffic.}
+  \entry{}{Incident management}{}{Introduced, defined and maintained incident management processes to Contentful (documentation, knowledge sharing, leading by example, helping postmortems, internal blogging etc). I have been on call for 10 years, I have participated in countless incidents, even customer incidents. Written customer-facing Root Cause Analyses.}
+\end{entrylist}
+\subsection{expert}
+\begin{entrylist}
+  \entry{}{Caching}{}{Several years of experience debugging edge layer issues, including connectivity and stale cache issues
+  Internal knowledge building about caching and cache invalidation, enabling Customer Support team to handle more technical tickets
+  Planning workflow for changing cache invalidation strategy (to avoid stale cache)
+  Customer-facing product maintenance for caching-related products. }
+  \entry{}{Operations}{}{Operating an application platform layer of dozens of Kubernetes clusters
+  Managing a fleet of several hundred instances of RabbitMQ async message queues (but you can’t pay me enough to do this again :) )
+  Evaluating multi-region database backup solutions. Maintaining and developing internal and external routing.}
+  \entry{}{Security}{}{Contributed to multiple projects where we changed how we store and access secrets. One of the maintainers of https://github.com/contentful-labs/kube-secret-syncer, a tool for syncing AWS Secrets Manager contents to Kubernetes Secrets. I was a “Security Champion”, an in-team representative of security-awareness. Pointed out multiple times when internal information was shared publicly by accident}
+  \entry{}{Architecture}{}{Mapping out the state of internal routing, and possible future directions
+  Mapping out the state of the organically diverse application platform, suggesting future directions for keeping it the simplest possible. Advising on several projects where data is distributed in several layers of the architecture, or where failure domains or blast radiuses would change. Observed and adapted to a 100x change in infrastructure scale}
+\end{entrylist}
+\subsection{experience}
+\begin{entrylist}
+    \entry{}{Compliance}{}{Defining, maintaining and improving the Disaster Recovery Procedure, both the technical and the customer-facing aspects. Translating user access audit requirements for infrastructure tools and services for SOC2 compliance}
+    \entry{}{Product-oriented}{}{On multiple occasions I contributed to the structured product definition and maintenance  of features that started as a “one-off” but then got rolled out more broadly. This included internal and external documentation and knowledge sharing, pointing out upcoming product questions, interactions with other features, measuring business impact etc.}
+\end{entrylist}
 \end{document}
