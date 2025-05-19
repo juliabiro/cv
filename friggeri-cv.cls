@@ -134,6 +134,24 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \stepcounter{colorCounter}%
 }
 
+\newcounter{colorCounter2}
+\def\@wideentrycolor#1#2#3{%
+  {%
+    \color{%
+      \ifcase\value{colorCounter2}%
+        red\or%
+        orange\or%
+        yellow\or%
+        green\or%
+        blue\or%
+        purple\or%
+        violet\else%
+        headercolor\fi%
+    } #1#2#3%
+  }%
+  \stepcounter{colorCounter2}%
+}
+
 \renewcommand{\section}[1]{
 %  \par\vspace{\parskip}
   {%
@@ -164,7 +182,15 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }{%
   \end{tabular*}
 }
+
+\newenvironment{entrylistWide}{%
+  \begin{tabular*}{\textwidth}{}%
+}{%
+  \end{tabular*}
+}
+
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
+
 \newcommand{\entry}[4]{%
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
@@ -172,6 +198,15 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
     #4\vspace{2pt}%
   }\\}
+
+\newcommand{\entryWide}[4]{%
+  #1&\parbox[t]{13.8cm}{%
+    \textbf{#2}%
+    \hfill%
+    \normalsize #3\\%
+    #4\vspace{2pt}%
+  }\\}
+
 
 %%%%%%%%%%%%%%
 % Side block %
