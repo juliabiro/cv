@@ -144,8 +144,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
         yellow\or%
         green\or%
         blue\or%
-        purple\or%
-        violet\else%
+        cyan\or
+        violet\or
+        teal\or
+        magenta\or
+        lime\else%
         headercolor\fi%
     } #1#2#3%
   }%
