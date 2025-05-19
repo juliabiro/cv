@@ -201,7 +201,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \newcommand{\entryWide}[4]{%
   #1&\parbox[t]{13.8cm}{%
-    \textbf{#2}%
+    \textbf{\@wideentrycolor #2}%
     \hfill%
     {\normalsize #3}\\%
     #4\vspace{2pt}%
