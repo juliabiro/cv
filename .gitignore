@@ -1,8 +1,8 @@
 auto/*
 *.aux
 *.bcf
+*.pdf
 *.log
 *.out
-*.pdf
 *.run.xml
 *.synctex.gz

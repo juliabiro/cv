@@ -1,6 +1,5 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
-\addbibresource{bibliography.bib}
 
 \begin{document}
 \header{júlia}{biró}
@@ -15,8 +14,10 @@
     Hungary
     ~
     \href{mailto:julia.biro@gmail.comt}{julia.biro@gmail.com}
+    \href{tel:+36308630138}{tel:+36308630138}
     \href{http://facebook.com/julia.biro1}{fb://julia.biro1}
     \href{www.linkedin.com/in/julia-biro}{ln://julia-biro}
+    \href{https://github.com/juliabiro}{gh://juliabiro}
   \section{languages}
     fluent english
     native hungarian
@@ -27,13 +28,14 @@
   \section{dev}
   Git, CI/CD, Makefile, gradle, package management
   \section{teaching}
-  \includegraphics[width=60]{railsgirls-sq} \includegraphics[width=80]{dglogo}  \includegraphics[width=80]{skool_Logo}  
-
+  \includegraphics[width=60pt]{railsgirls-sq}
+  \includegraphics[width=80pt]{dglogo}
+  \includegraphics[width=80pt]{skool_Logo}
+  \includegraphics[width=80pt]{METU}
 \end{aside}
 
 \section{interests}
-scalable infrastructure, DevOps,  tooling, automation, configuration as code,
-microservices, CI/CD, highly available infrastructure;
+scalable HA infrastructure, DevOps, microservices, CI/CD, IaC, secret management \break
 programming for beginners, women in technology
 
 \section{education}
@@ -52,32 +54,31 @@ programming for beginners, women in technology
 
 \section{experience}
 \begin{entrylist}
-  \entry{2014 – }{Prezi} {infrastructure and tooling engineer}{infrastructure team}
+  \entry{2014 – }{Prezi} {infrastructure team}{infrastructure and tooling engineer}
   \entry{2011 –	2014}{Ericsson Hungary} {edge router software testing}{software developer}
-  \entry{2008 – 2011}{MTA SZTAKI}{Data-mining and Web search team}{software
-    developer}
+  \entry{2008 – 2011}{MTA SZTAKI} {Data-mining and Web search team}{software developer}
 \end{entrylist}
 
 \section{skills}
 \begin{entrylist}
-  \entry{}{Infrastructure management}{}{AWS, Chef, Docker, unix,  CDN}
-  \entry{}{DevOps}{}{Jenkins Enterprise, Cloudbees PSE,
-    Artifactory, Graphite, Scribe, Logster}
-  \entry{}{Microservices}{}{HA infrastructure, deployment, HTTP(s) networking}
+  \entry{}{Infrastructure management}{}{unix, AWS, Terraform, Docker, nginx, VPN}
+  \entry{}{DevOps}{}{Jenkins, Pipeline,
+    Prometheus, Graphite, Scribe, ELK stack, Artifactory}
+  \entry{}{Microservices}{}{ElasticBeanstalk, Chef, HTTP(s) networking, authentication}
   \entry{}{Programming}{}{Experience: C++, Java, Javascript; Have seen: Ada,
     Erlang, Prolog}
   \end{entrylist}
+
 \section{projects}
 \begin{entrylist}
+  \entry{}{new CI system}{prezi}{from research through implementation to full company rollout}
+  \entry{}{2FA}{prezi}{designing a 2FA solution with no clientside change}
   \entry{}{In-service OS upgrade}{prezi}{on a live server cluster without outage}
-  \entry{}{Jenkins service and infrastructure}{prezi}{Design, setup, operation, maintenance}
-  \entry{}{HA data forwarding}{prezi}{from processed logs to graph plotter }
   \entry{}{Secret management rollout}{prezi}{using AWS IAM and KMS on a pool of several hundred servers}
   \entry{}{IPC-based test tool}{ericsson}{for edge-router os, development and maintenance}
   \entry{}{Various programming tasks}{sztaki}{recommending pipeline,algorithms, Java GUI}
-  \end{entrylist}
+\end{entrylist}
 
   \section{hobbies}
-  European and indie cinema; new wave coffee, craft beer/home brewing; music and
-  reading.
+  European cinema; new wave coffee, craft beer/home brewing; music and reading
 \end{document}
