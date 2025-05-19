@@ -184,7 +184,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \newenvironment{entrylistWide}{%
-  \begin{tabular*}{\textwidth}{}%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
   \end{tabular*}
 }
@@ -203,10 +203,9 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   #1&\parbox[t]{13.8cm}{%
     \textbf{#2}%
     \hfill%
-    \normalsize #3\\%
+    {\normalsize #3}\\%
     #4\vspace{2pt}%
   }\\}
-
 
 %%%%%%%%%%%%%%
 % Side block %
