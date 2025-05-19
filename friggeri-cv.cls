@@ -138,16 +138,16 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \def\@wideentrycolor{%
     \color{%
       \ifcase\value{colorCounter2}%
+        purple\or%
         red\or%
+        magenta\or%
+        brown\or%
         orange\or%
-        yellow\or%
         green\or%
+        teal\or
         blue\or%
         cyan\or
         violet\or
-        teal\or
-        magenta\or
-        lime\else%
         headercolor\fi%
   }%
   \stepcounter{colorCounter2}%
