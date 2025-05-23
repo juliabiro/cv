@@ -1,9 +1,9 @@
-%!TEX TS-program = xelatex
+% !TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
 
 \begin{document}
 \header{júlia}{biró}
-       {infrastructure \& reliability engineer}
+{infrastructure \& reliability engineer}
 
 
 % In the aside, each new line forces a line break
@@ -11,16 +11,16 @@
   \section{about}
   Berlin
   Germany
-    ~
-    \href{mailto:julia.biro@gmail.comt}{julia.biro@gmail.com}
-    \href{tel:+4917656905914}{tel:+4917656905914}
-    \href{http://facebook.com/julia.biro1}{fb://julia.biro1}
-    \href{www.linkedin.com/in/julia-biro}{ln://julia-biro}
-    \href{https://github.com/juliabiro}{gh://juliabiro}
+  ~
+  \href{mailto:julia.biro@gmail.comt}{julia.biro@gmail.com}
+  \href{tel:+4917656905914}{tel:+4917656905914}
+  \href{http://facebook.com/julia.biro1}{fb://julia.biro1}
+  \href{www.linkedin.com/in/julia-biro}{ln://julia-biro}
+  \href{https://github.com/juliabiro}{gh://juliabiro}
   \section{languages}
-    fluent English
-    native Hungarian
-    B1 German
+  fluent English
+  native Hungarian
+  B1 German
   \section{code}
   go python
   javascript bash
@@ -38,15 +38,15 @@ Reliability, scalability, security, monitoring, incident management
 \section{education}
 \begin{entrylist}
   \entry
-    {2007 – 2013}
-    {BSc degree in IT Engineering/CS}
-    {}
-    {Budapest University of Technology and Economics}
+  {2007 – 2013}
+  {BSc degree in IT Engineering/CS}
+  {}
+  {Budapest University of Technology and Economics}
   \entry
-    {2002 – 2010}
-    {MSc degree in Mathematics}
-    {}
-    {Eötvös Loránd University of Sciences}
+  {2002 – 2010}
+  {MSc degree in Mathematics}
+  {}
+  {Eötvös Loránd University of Sciences}
 \end{entrylist}
 
 \section{experience}
@@ -63,7 +63,7 @@ Reliability, scalability, security, monitoring, incident management
   \entry{}{Monitoring}{}{Prometheus, Grafana, Splunk, OpenTelemetry}
   \entry{}{Reliability}{}{Networking, procedures}
   \entry{}{Caching}{}{Fastly, Varnish, Akamai, CloudFront}
-  \end{entrylist}
+\end{entrylist}
 
 \section{scope}
 \begin{entrylist}
@@ -75,34 +75,99 @@ Reliability, scalability, security, monitoring, incident management
 \end{entrylist}
 
 \section{hobbies}
-  European cinema; museums; reading quality journalism
+Arthouse cinema, museums, quality journalism
+
 \newpage
 \section{projects}
 \subsection{driver}
 \begin{entrylistWide}
-  \entryWide{}{Migrations}{}{I assisted in the execution and planning of several migrations projects, with regards to service availability, data integrity, cache behavior etc. Examples are spread out around: I’ve seen/done/planned migrations between secret storage solutions, monitoring and alerting providers, application platforms, cache invalidation strategies, async message bus providers, WAF providers, edge cache providers. Even the move of a small stateless service between clouds.}
-  \entryWide{}{Monitoring}{}{Maintainer and later driver of monitoring. Did everything from editing Grafana dashboards to mapping out the current state and defining a future strategy for monitoring and observability. Multiple rounds of moving/restructuring pipelines for alerting.}
-  \entryWide{}{Reliability}{}{Contributed to implementing multi-region service of stateful API. Advising on migration plans for an async communication flow between two message bus systems. Defining and initiating process for managing reliability-related risks from a business perspective. Reliability/scalability evaluation before events where changing or more critical traffic is expected. Multiple projects for reducing blast radiuses by routing and sectioning traffic.}
-  \entryWide{}{Incident management}{}{Introduced, defined and maintained incident management processes to Contentful (documentation, knowledge sharing, leading by example, helping postmortems, internal blogging etc). I have been on call for 10 years, I have participated in countless incidents, even customer incidents. Written customer-facing Root Cause Analyses.}
+  \entryWide{}{Migrations}{}{Contributed to the planning and execution of complex migration projects, ensuring zero-downtime transitions and data integrity. Migrated services between:
+    \begin{itemize}
+    \item Secret storage and access solutions
+    \item Monitoring and alerting providers
+    \item Application platforms, edge cache providers
+    \item WAF solutions, async message bus systems
+    \item Clouds (one small stateless service)
+    \end{itemize}
+  }
+  \entryWide{}{Monitoring}{}{Participated in work in all layers and scopes of monitoring.
+    \begin{itemize}
+    \item Editing Grafana dashboards, managing log an metrics collection
+    \item Managing monitoring data pipelines
+    \item Led multiple rounds of restructuring alerting pipelines
+    \item Defining future observability strategies
+    \end{itemize}
+  }
+  \entryWide{}{Reliability}{}{This area is closest to my heart. I tend to contribute the reliability perspective to every project.
+    \begin{itemize}
+    \item Helped implement a multi-region setup for a stateful API
+    \item Provided guidance on migrating traffic flows between async message bus systems
+    \item Defined a process for managing reliability risks from a business perspective
+    \item Conducted reliability and scalability reviews before high business-value events
+    \item Led projects to reduce blast radius by segmenting and routing traffic
+    \end{itemize}
+  }
+  \entryWide{}{Incident management}{}{I introduced and maintained incident management processes for an entire engineering org.
+    \begin{itemize}
+    \item Defined and documented processes, spread the culture of incident management internally
+    \item I have been on-call for 10 years for customer-facing functionalities
+    \item I actively participated in countless incidents, including customers incidents
+    \item Participated in external communications about incidents
+    \end{itemize}
+  }
 \end{entrylistWide}
-
+\newpage
 \subsection{expert}
 \begin{entrylistWide}
-  \entryWide{}{Caching}{}{Several years of experience debugging edge layer issues, including connectivity and stale cache issues
-  Internal knowledge building about caching and cache invalidation, enabling Customer Support team to handle more technical tickets
-  Planning workflow for changing cache invalidation strategy (to avoid stale cache)
-  Customer-facing product maintenance for caching-related products. }
-  \entryWide{}{Operations}{}{Operating an application platform layer of dozens of Kubernetes clusters
-  Managing a fleet of several hundred instances of RabbitMQ async message queues (but you can’t pay me enough to do this again :) )
-  Evaluating multi-region database backup solutions. Maintaining and developing internal and external routing.}
-  \entryWide{}{Security}{}{Contributed to multiple projects where we changed how we store and access secrets. One of the maintainers of https://github.com/contentful-labs/kube-secret-syncer, a tool for syncing AWS Secrets Manager contents to Kubernetes Secrets. I was a “Security Champion”, an in-team representative of security-awareness. Pointed out multiple times when internal information was shared publicly by accident}
-  \entryWide{}{Architecture}{}{Mapping out the state of internal routing, and possible future directions
-  Mapping out the state of the organically diverse application platform, suggesting future directions for keeping it the simplest possible. Advising on several projects where data is distributed in several layers of the architecture, or where failure domains or blast radiuses would change. Observed and adapted to a 100x change in infrastructure scale}
+  \entryWide{}{Caching}{}{I became local expert on our caching features.
+    \begin{itemize}
+    \item Deep experience debugging edge-layer issues, ie. connectivity and stale cache
+    \item Enabled customer facing roles to handle caching-related issues and questions
+    \item Planned roll-out of cache invalidation strategy changes to avoid stale data
+    \item Improved internal and external product representation for caching-related features
+    \end{itemize}
+  }
+  \entryWide{}{Operations}{}{Participated in the operation of application platforms for ten years.
+    \begin{itemize}
+    \item Managed dozens of Kubernetes clusters
+    \item Managed a fleet of several hundred RabbitMQ instances
+    \item Evaluated multi-region database backup solutions
+    \item Maintained and developed both internal and external routing infrastructure
+    \end{itemize}
+  }
+  \entryWide{}{Architecture}{}{My motto is that I prefer consistent mess over inconsistent mess.
+    \begin{itemize}
+    \item Mapped the state of internal routing and proposed future directions
+    \item Suggested improvements for an organically diverse application platform for consistency and scalability
+    \item Advised on projects involving data distributed among several infrastructure layers
+    \item Promoted awareness to changes to failure domains and blast radiuses during project planning
+    \item Assisted the adaptation of the infrastructure to a 100x increase in scale
+    \end{itemize}
+  }
 \end{entrylistWide}
 
 \subsection{experience}
 \begin{entrylistWide}
-  \entryWide{}{Compliance}{}{Defining, maintaining and improving the Disaster Recovery Procedure, both the technical and the customer-facing aspects. Translating user access audit requirements for infrastructure tools and services for SOC2 compliance}
-  \entryWide{}{Product-oriented}{}{On multiple occasions I contributed to the structured product definition and maintenance  of features that started as a “one-off” but then got rolled out more broadly. This included internal and external documentation and knowledge sharing, pointing out upcoming product questions, interactions with other features, measuring business impact etc.}
+  \entryWide{}{Security}{}{I happened to sit close to security teams most of my career.
+    \begin{itemize}
+    \item Contributed to major changes of secret storage and access solutions
+    \item Maintained the \href{https://github.com/contentful-labs/kube-secret-syncer}{kube-secret-syncer}
+    \item Embedded representative of the Security Team, promoting security awareness
+    \item Identified incidents where internal information was accidentally exposed publicly
+    \end{itemize}
+  }
+  \entryWide{}{Compliance}{}{I participated in several external compliance projects.
+    \begin{itemize}
+    \item Defined and maintained Disaster Recovery Procedures, addressing both technical and customer-facing aspects
+    \item Translated user access audit requirements for infrastructure tools and services to meet SOC2 compliance audit
+    \item Assisted Business Continuity gameday
+    \end{itemize}
+  }
+  \entryWide{}{+1 Product-oriented}{}{
+    \begin{itemize}
+    \item Created structured definition of and scaled features that grew from one-off solutions to broadly marketed and deployed products
+    \item Developed internal and external documentation, internal enablement, and managed business impact measurements for these features
+    \end{itemize}
+  }
 \end{entrylistWide}
 \end{document}
