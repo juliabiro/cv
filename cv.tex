@@ -1,9 +1,9 @@
-%!TEX TS-program = xelatex
+% !TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
 
 \begin{document}
 \header{júlia}{biró}
-       {infrastructure \& reliability engineer}
+{infrastructure \& reliability engineer}
 
 
 % In the aside, each new line forces a line break
@@ -11,16 +11,16 @@
   \section{about}
   Berlin
   Germany
-    ~
-    \href{mailto:julia.biro@gmail.comt}{julia.biro@gmail.com}
-    \href{tel:+4917656905914}{tel:+4917656905914}
-    \href{http://facebook.com/julia.biro1}{fb://julia.biro1}
-    \href{www.linkedin.com/in/julia-biro}{ln://julia-biro}
-    \href{https://github.com/juliabiro}{gh://juliabiro}
+  ~
+  \href{mailto:julia.biro@gmail.comt}{julia.biro@gmail.com}
+  \href{tel:+4917656905914}{tel:+4917656905914}
+  \href{http://facebook.com/julia.biro1}{fb://julia.biro1}
+  \href{www.linkedin.com/in/julia-biro}{ln://julia-biro}
+  \href{https://github.com/juliabiro}{gh://juliabiro}
   \section{languages}
-    fluent English
-    native Hungarian
-    B1 German
+  fluent English
+  native Hungarian
+  B1 German
   \section{code}
   go python
   javascript bash
@@ -38,15 +38,15 @@ Reliability, scalability, security, monitoring, incident management
 \section{education}
 \begin{entrylist}
   \entry
-    {2007 – 2013}
-    {BSc degree in IT Engineering/CS}
-    {}
-    {Budapest University of Technology and Economics}
+  {2007 – 2013}
+  {BSc degree in IT Engineering/CS}
+  {}
+  {Budapest University of Technology and Economics}
   \entry
-    {2002 – 2010}
-    {MSc degree in Mathematics}
-    {}
-    {Eötvös Loránd University of Sciences}
+  {2002 – 2010}
+  {MSc degree in Mathematics}
+  {}
+  {Eötvös Loránd University of Sciences}
 \end{entrylist}
 
 \section{experience}
@@ -63,7 +63,7 @@ Reliability, scalability, security, monitoring, incident management
   \entry{}{Monitoring}{}{Prometheus, Grafana, Splunk, OpenTelemetry}
   \entry{}{Reliability}{}{Networking, procedures}
   \entry{}{Caching}{}{Fastly, Varnish, Akamai, CloudFront}
-  \end{entrylist}
+\end{entrylist}
 
 \section{scope}
 \begin{entrylist}
@@ -75,7 +75,7 @@ Reliability, scalability, security, monitoring, incident management
 \end{entrylist}
 
 \section{hobbies}
-  European cinema; museums; reading quality journalism
+European cinema; museums; reading quality journalism
 \newpage
 \section{projects}
 \subsection{driver}
@@ -87,26 +87,32 @@ Reliability, scalability, security, monitoring, incident management
     \item Monitoring and alerting providers
     \item Application platforms, edge cache providers
     \item WAF solutions, async message bus systems
-    \item Clouds (one small stateless service) .
-  \end{itemize}
+    \item Clouds (one small stateless service)
+    \end{itemize}
   }
-  \entryWide{}{Monitoring}{}{I maintained and eventually led our monitoring efforts. My work ranged from editing Grafana dashboards to assessing the current state and shaping long-term monitoring and observability strategies. I also led multiple efforts to restructure and improve alerting pipelines.}
+  \entryWide{}{Monitoring}{}{
+    \begin{itemize}
+    \item Maintained and drove improvements in monitoring
+    \item participated in work in all layers and scopes of monitoring, from
+      editing Grafana dashboards to defining future observability strategies
+    \item Led multiple rounds of restructuring alerting pipelines
+    \end{itemize}
+  }
   \entryWide{}{Reliability}{}{This area is closest to my heart. I tend to contribute the reliability perspective to every project I work on.
-  \begin{itemize}
-  \item Helped implement a multi-region setup for a stateful API
-  \item Provided guidance on migrating async communication flows between message bus systems
-  \item Defined a process for managing reliability risks from a business perspective
-  \item Conducted reliability and scalability reviews before major traffic events
-  \item Led projects to reduce blast radius by segmenting and routing traffic
-\end{itemize}
+    \begin{itemize}
+    \item Helped implement a multi-region setup for a stateful API
+    \item Provided guidance on migrating traffic flows between async message bus systems
+    \item Defined a process for managing reliability risks from a business perspective
+    \item Conducted reliability and scalability reviews before high business-value events involving traffic changes
+    \item Led projects to reduce blast radius by segmenting and routing traffic
+    \end{itemize}
   }
   \entryWide{}{Incident management}{}{
-\begin{itemize}
-    \item Introduced and maintained incident management processes for the entire
-      engineering org, including documentation, knowledge sharing, leading postmortems, and internal blogging.
-    \item Having been on-call for 10 years, actively participating in numerous incidents, including customer-facing incidents, and authoring Root Cause Analyses.
+    \begin{itemize}
+    \item Introduced and maintained incident management processes for the entire engineering org, including documentation, knowledge sharing, leading postmortems, and internal blogging
+    \item Having been on-call for 10 years, I actively participated in countless incidents, including customers incidents, and authoring Root Cause Analyses
     \end{itemize}
- }
+  }
 \end{entrylistWide}
 
 \subsection{expert}
@@ -117,44 +123,51 @@ Reliability, scalability, security, monitoring, incident management
     \item Enabled customer facing roles to handle caching-related issues and questions
     \item Planned roll-out of cache invalidation strategy changes to avoid stale data
     \item Improved internal and external product representation for caching-related features
-\end{itemize}
+    \end{itemize}
   }
   \entryWide{}{Operations}{}{As an infrastructure engineer I have participated in the operation of application platforms for ten years.
     \begin{itemize}
-    \item Managed dozens of Kubernetes clusters.
-    \item Managed a fleet of several hundred RabbitMQ instances (with a preference not to do so again!).
-    \item Evaluated multi-region database backup solutions.
-    \item Maintained and developed both internal and external routing infrastructure.
-\end{itemize}
-\entryWide{}{Security}{}{
-\begin{itemize}
-    \item Contributed to multiple projects focused on improving secret storage and access processes.
-    \item Maintained the \href{https://github.com/contentful-labs/kube-secret-syncer}{kube-secret-syncer} tool for syncing AWS Secrets Manager with Kubernetes Secrets.
-    \item Acted as a "Security Champion," promoting security awareness and identifying incidents where internal information was accidentally exposed publicly.
-\end{itemize}
-}
-\entryWide{}{Architecture}{}{
-\begin{itemize}
-    \item Mapped the state of internal routing and proposed future directions to enhance architecture simplicity.
-    \item Suggested improvements for an organically diverse application platform to maintain simplicity and scalability.
-    \item Advised on projects involving distributed data layers, failure domains, and blast radiuses.
-    \item Successfully adapted to a 100x increase in infrastructure scale.
-\end{itemize}
-}
+    \item Managed dozens of Kubernetes clusters
+    \item Managed a fleet of several hundred RabbitMQ instances (but please no more of that :) )
+    \item Evaluated multi-region database backup solutions
+    \item Maintained and developed both internal and external routing infrastructure
+    \end{itemize}
+  }
+  \entryWide{}{Security}{}{
+    \begin{itemize}
+    \item Contributed to multiple projects for improving secret storage and access for security and scalability
+    \item Maintained the \href{https://github.com/contentful-labs/kube-secret-syncer}{kube-secret-syncer} tool for syncing AWS Secrets Manager with Kubernetes Secrets
+    \item Acted as an embedded representative of the Security Team, promoting security awareness
+    \item Identified incidents where internal information was accidentally exposed publicly
+    \end{itemize}
+  }
+  \entryWide{}{Architecture}{}{
+    \begin{itemize}
+    \item Mapped the state of internal routing and proposed future directions to ensure architecture consistency
+    \item Suggested improvements for an organically diverse application platform to maintain consistency and scalability
+    \item Advised on projects involving data distributed among several
+      infrastructure layers
+    \item Promoted awareness to changes in failure domains and blast radiuses
+      during project planning
+    \item Assisted the adaptation of the infrastructure to a 100x increase in scale
+    \end{itemize}
+  }
 \end{entrylistWide}
 
 \subsection{experience}
 \begin{entrylistWide}
   \entryWide{}{Compliance}{}{
     \begin{itemize}
-    \item Defined and maintained Disaster Recovery Procedures, addressing both technical and customer-facing aspects.
-    \item Translated user access audit requirements for infrastructure tools and services to meet SOC2 compliance standards.
-\end{itemize}
+    \item Defined and maintained Disaster Recovery Procedures, addressing both technical and customer-facing aspects
+    \item Translated user access audit requirements for infrastructure tools and services to meet SOC2 compliance audit
+    \end{itemize}
   }
   \entryWide{}{Product-oriented}{}{
-  \begin{itemize}
-    \item Contributed to the structured definition and scaling of product features that transitioned from one-off solutions to broadly deployed functionalities.
-    \item Developed internal and external documentation, facilitated knowledge sharing, and managed business impact measurements.
+    \begin{itemize}
+    \item Contributed to the structured definition and scaling of product
+      features that transitioned from one-off solutions to broadly marketed and deployed features
+    \item Developed internal and external documentation, facilitated knowledge
+      sharing, and managed business impact measurements for these features
     \end{itemize}
   }
 \end{entrylistWide}
