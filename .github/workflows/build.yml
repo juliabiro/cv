@@ -1,5 +1,7 @@
 name: Build LaTeX document
 on: [push]
+paths-ignore:
+  '**.pdf'
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -12,3 +14,10 @@ jobs:
           working_directory: ./
           root_file: cv.tex
           latexmk_use_xelatex: true
+      - name: Push to repo
+        run: |
+          git config --global user.name 'Julia Biro'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -am "Generated PDF file"
+          git push
