@@ -1,8 +1,11 @@
 auto/*
-*.aux
 *.bcf
-*.pdf
 *.log
 *.out
+*.xdv
+*.fls
+*.aux
 *.run.xml
 *.synctex.gz
+*.fdb_latexmk
+
