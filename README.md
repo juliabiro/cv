@@ -1,6 +1,6 @@
 # CV
 
-My CV that uses this template: [https://www.sharelatex.com/templates/cv-or-resume/fancy-cv](Fancy CV Adrien Friggeri)
-I removed the bibtex parts becasue they are unnecessary here and casued errors.
+[Read my CV here](https://github.com/juliabiro/cv/blob/github_action_setup/cv.pdf)
 
+The CV was created uses this template: [https://www.sharelatex.com/templates/cv-or-resume/fancy-cv](Fancy CV Adrien Friggeri)
 Build with your favorite LaTeX tools. Please respect the original copyright. 
