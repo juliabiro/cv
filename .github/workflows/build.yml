@@ -1,7 +1,8 @@
 name: Build LaTeX document
-on: [push]
-paths-ignore:
-  '**.pdf'
+on:
+  push:
+    paths-ignore:
+      - '**.pdf'
 jobs:
   build_latex:
     runs-on: ubuntu-latest
